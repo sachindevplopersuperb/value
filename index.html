@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>game</title>
+    <style type="text/css">
+        *{
+
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+position: relative;
+background-image: url(hhu.jpg);
+
+        }
+        
+
+#btn{
+
+display: flex;
+padding: 10px;
+justify-content: space-between;
+}
+#btn button{
+
+flex: 1;
+
+
+}
+
+#btns{
+text-align: center;
+
+position:10px ;
+
+}
+#right{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+border-radius: 55%;
+    width: 125px;
+    height: 123px;
+background-image: url(space.jpg);
+background-size: cover;
+}
+
+#left{
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+border-radius: 55%;
+    width: 125px;
+    height: 123px;
+background-image: url(p.jpg);
+background-size: cover;
+}
+
+#fire{
+
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+border-radius: 25%;
+    width: 125px;
+    height: 123px;
+background-image: url(fire.png);
+
+}
+
+#btns{
+    background-image: url(hh.jpg);
+background-size: cover;
+
+    color: red;
+    font-size: 55px;
+    font-weight: bold;
+border-radius: 25%;
+margin-left: 22px;
+    width: 86%;
+    height: 63px;
+}
+#result{
+    background-image: url(moon.jpeg);
+background-size: cover;
+
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+border-radius: 25%;
+margin-left: 22px;
+    width: 86%;
+    height: 63px;
+}
+
+#moon{
+
+    animation: rotate 1s linear infinite;
+}
+@keyframes rotate{
+0%{
+
+    transform:rotate(0deg);
+}
+100%{
+transform:rotate(360deg);
+
+}
+
+
+
+}
+
+        #game{
+            position: ;
+            background-image: url(hh.jpg);
+            background-size: cover;
+            max-width:100%;
+            height:auto;
+            overflow: hidden;
+        }
+        #blocker{
+    display: none;
+    position: absolute;
+            top: 150px;
+            left:600px ;
+            
+}
+#blocker img{
+    
+    width: 262px;
+            height: auto;
+
+            
+}
+
+#frist{
+    display: none;
+    position: absolute;
+            top: 150px;
+            left:600px ;
+            
+}
+#frist img{
+    
+    width: 212px;
+            height: auto;
+
+            
+}
+
+.fristcss{
+            animation: 2s qove linear infinite;
+        }
+
+
+        @keyframes qove{
+0%{
+left:600px ;
+
+
+}
+100%{
+
+    left:-200px ;
+}
+
+}
+
+
+
+
+
+
+#second{
+    
+    position: absolute;
+            top: 150px;
+            left:600px ;
+            
+}
+#second img{
+    
+    width: 212px;
+            height: auto;
+
+            
+}
+.secondcss{
+            animation: 2s wove linear infinite;
+        }
+@keyframes wove{
+0%{
+left:600px ;
+
+
+}
+100%{
+
+    left:-200px ;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#third{
+    
+    position: absolute;
+            top: 150px;
+            left:600px ;
+            
+}
+#third img{
+    
+    width: 212px;
+            height: auto;
+
+            
+}
+.thirdcss{
+            animation: 2s eove linear infinite;
+        }
+@keyframes eove{
+0%{
+left:600px ;
+
+
+}
+100%{
+
+    left:-200px ;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#four{
+    
+    position: absolute;
+            top: 150px;
+            left:600px ;
+            
+}
+#four img{
+    
+    width: 212px;
+            height: auto;
+
+            
+}
+.fourcss{
+            animation: 1s zove linear infinite;
+        }
+@keyframes zove{
+0%{
+left:600px ;
+
+
+}
+100%{
+
+    left:-200px ;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    #game {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #btn {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #btn button {
+        width: 100%;
+        margin: 5px;
+    }
+
+    #btns button {
+        width: 100%;
+        margin: 5px;
+    }
+
+    /* Additional adjustments for smaller screens */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        #flyer{
+            position: absolute;
+            top: 150px;
+            left:600px ;
+            
+            
+        }
+        #flyer img{
+width: 222px;
+            height: auto;
+
+        }
+        .flyercss{
+            animation: 3s move linear infinite;
+        }
+        @keyframes move{
+0%{
+left:600px ;
+
+
+}
+100%{
+
+    left:-200px ;
+}
+
+
+        }
+        #nityam {
+position: absolute;
+top:150px;
+    width: 222px;
+
+            
+        }
+
+        #nityam img{
+
+    width: 211px;
+            height: auto;
+        }
+
+.bullet{
+
+position: absolute;
+top:150px;
+
+width: 222px;
+            height: auto;
+animation:  king 1s linear 1 forwards;
+
+}
+@keyframes king{
+0%{
+left: 65px;
+}
+100%{
+    left: 1665px;
+}
+}
+
+.bulletimg{
+
+width: 112px;
+            height: auto;
+
+
+}
+
+
+
+.blockercss{
+            animation: 3s dove linear infinite;
+        }
+        @keyframes dove{
+0%{
+left:600px ;
+
+
+}
+100%{
+
+    left:-200px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+<div id="game">
+    <audio id="myaudio" src="au.mp3">
+
+
+     
+</audio>
+
+
+
+     <button id="playButton"></button>
+    <img src="moon1.png" id="moon">
+    <div id="flyer"><img src="https://www.animatedimages.org/data/media/574/animated-monster-image-0117.gif"></div>
+<div id="nityam"><img src="https://www.animatedimages.org/data/media/1579/animated-superman-image-0003.gif"></div>
+
+<div id="blocker"><img src="https://www.animatedimages.org/data/media/130/animated-devil-image-0280.gif"></div>
+<div id="frist"><img src="https://www.animatedimages.org/data/media/130/animated-devil-image-0246.gif"></div>
+<div id="second"><img src="https://www.animatedimages.org/data/media/574/animated-monster-image-0030.gif"></div>
+<div id="third"><img src="https://www.animatedimages.org/data/media/574/animated-monster-image-0029.gif"></div>
+
+<div id="four"><img src="https://www.animatedimages.org/data/media/34/animated-ufo-image-0023.gif"></div>
+
+
+
+</div>
+<div id="btn">
+<button id="left">DOWN</button>
+<button id="fire">FIRE</button>
+
+<button id="right">UP</button>
+</div>
+
+<button id="btns" onclick="location.reload()">RESTART</button>
+<button id="result">result</button>
+<script type="text/javascript">
+    var background=document.body;
+    var counter=0;
+    var counterz=0;
+    var n=0;
+    var s=0;
+    var v=0;
+    var t=0;
+    var link;
+    var linksecond;
+    var linkthird;
+    var result=document.getElementById("result");
+    var second=document.getElementById("second");
+    var third=document.getElementById("third");
+    var four=document.getElementById("four");
+    
+    var frist=document.getElementById("frist");
+    var blocker=document.getElementById("blocker");
+    var right=document.getElementById("right");
+    var left=document.getElementById("left");
+    var game=document.getElementById("game");
+    var fire=document.getElementById("fire");
+    var flyer=document.getElementById("flyer");
+var nityam=document.getElementById("nityam");
+var b;
+var myaudio=document.getElementById("myaudio");
+
+
+myaudio.play()
+
+
+
+left.addEventListener("click",function(){
+var you=parseInt(window.getComputedStyle(nityam).getPropertyValue("top"))
+
+if (you<222) {
+nityam.style.top=(you+150)+"px"
+myaudio.play()
+
+}
+
+
+})
+right.addEventListener("click",function(){
+var you=parseInt(window.getComputedStyle(nityam).getPropertyValue("top"))
+
+if (you>0) {
+nityam.style.top=(you-150)+"px"
+myaudio.play()
+
+}
+})
+fire.addEventListener("click",function(){
+ b=document.createElement("div")
+var c=document.createElement("img")
+c.src="hammer.png"
+b.classList.add("bullet")
+c.classList.add("bulletimg")
+b.style.top=nityam.style.top
+b.appendChild(c);
+game.appendChild(b);
+myaudio.play()
+
+
+
+})
+
+function broke(){
+var btop=parseInt(window.getComputedStyle(b).getPropertyValue("top"))
+var flyertop=parseInt(window.getComputedStyle(flyer).getPropertyValue("top"))
+
+
+
+if (btop==flyertop) {
+    flyer.style.display="none"
+}
+} setInterval(broke,10);
+
+    function show(){
+
+
+
+
+    flyer.style.display="block"
+    
+var a=(Math.floor(Math.random()*3)*150)
+
+flyer.style.top=(a)+"px"
+flyer.classList.add("flyercss");
+counter++;
+} 
+
+var g=setInterval(show,3000);
+//most important thing reme
+
+    //
+ 
+//
+function gameOver() {
+    var flyerright = parseInt(window.getComputedStyle(flyer).getPropertyValue("right"));
+    if (flyerright> 1260) {
+        alert(counter);
+        game.style.display = 'none';
+        
+    }
+}
+
+setInterval(gameOver, 10);
+function fun(){
+var btop=parseInt(window.getComputedStyle(b).getPropertyValue("top"))
+var blockertop=parseInt(window.getComputedStyle(blocker).getPropertyValue("top"))
+
+
+
+if (btop==blockertop) {
+    blocker.style.display="none"
+}
+} setInterval(fun,10);
+
+function level(){
+
+
+    if (counter==2) {
+        clearInterval(g);
+flyer.style.display="none"
+blocker.style.display="block"
+var ab=(Math.floor(Math.random()*3)*150)
+
+blocker.style.top=(ab)+"px"
+blocker.classList.add("blockercss");
+counterz++
+
+    }
+}
+
+var h=setInterval(level, 6000);
+
+
+
+function gameOvers() {
+    var blockerright = parseInt(window.getComputedStyle(blocker).getPropertyValue("right"));
+    if (blockerright>1160) {
+        flyer.style.display="none"
+        game.style.display = 'none';
+result.innerHTML=`score:${counter}`;
+    }
+}
+
+setInterval(gameOvers, 10);
+
+
+
+
+
+
+
+
+
+function levelest(){
+
+    if (counterz==2) {
+
+        clearInterval(h);
+        
+        
+        blocker.style.display="none"
+frist.style.display="block"
+
+
+var a=(Math.floor(Math.random()*3)*150)
+
+frist.style.top=(a)+"px"
+frist.classList.add("fristcss")
+
+n++
+
+
+    }
+}
+
+var i=setInterval(levelest,2000);
+
+
+function funfrist(){
+var btop=parseInt(window.getComputedStyle(b).getPropertyValue("top"))
+var fristtop=parseInt(window.getComputedStyle(frist).getPropertyValue("top"))
+
+
+
+if (btop==fristtop) {
+    frist.style.display="none"
+}
+} setInterval(funfrist,10);
+
+
+
+function gameOverfrist() {
+    var fristright = parseInt(window.getComputedStyle(frist).getPropertyValue("right"));
+    if (fristright>1260) {
+        game.style.display = 'none';
+result.innerHTML=`score:${counter+counterz}`;
+        
+        
+        
+    }
+}
+
+setInterval(gameOverfrist, 10);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function levelsecond(){
+
+linksecond=n;
+    if (linksecond==3) {
+clearInterval(i);
+        
+        
+        frist.style.display="none"
+second.style.display="block"
+
+var a=(Math.floor(Math.random()*3)*150)
+
+second.style.top=(a)+"px"
+second.classList.add("secondcss")
+
+s++
+
+    }
+}
+
+var j=setInterval(levelsecond,2000);
+
+
+
+
+
+
+
+
+
+function funsecond(){
+var btop=parseInt(window.getComputedStyle(b).getPropertyValue("top"))
+var secondtop=parseInt(window.getComputedStyle(second).getPropertyValue("top"))
+
+
+
+if (btop==secondtop) {
+    second.style.display="none"
+}
+} setInterval(funsecond,10);
+
+
+
+function gameOversecond() {
+    var secondright = parseInt(window.getComputedStyle(second).getPropertyValue("right"));
+    if (secondright>1260) {
+        
+        game.style.display = 'none';
+result.innerHTML=`score:${counter+counterz+n}`;
+        
+        
+    }
+}
+
+setInterval(gameOversecond, 10);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function levelthird(){
+
+
+    if (s==5) {
+clearInterval(j);
+        second.style.display="none"
+third.style.display="block"
+
+var a=(Math.floor(Math.random()*3)*150)
+
+third.style.top=(a)+"px"
+third.classList.add("thirdcss")
+console.log("linkthird"+linkthird)
+
+console.log("linkthird"+linkthird)
+t++
+console.log("s"+t)
+    }
+}
+
+var k=setInterval(levelthird,2000);
+
+
+function funthird(){
+var btop=parseInt(window.getComputedStyle(b).getPropertyValue("top"))
+var thirdtop=parseInt(window.getComputedStyle(third).getPropertyValue("top"))
+
+
+
+if (btop==thirdtop) {
+    third.style.display="none"
+}
+} setInterval(funthird,10);
+
+
+
+function gameOverthird() {
+    var thirdright = parseInt(window.getComputedStyle(third).getPropertyValue("right"));
+    if (thirdright>1260) {
+        alert("gameOver")
+        
+        
+        game.style.display = 'none';
+result.innerHTML=`score:${counter+counterz+n+s}`;
+        
+        
+    }
+}
+
+setInterval(gameOverthird, 10);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function levelfour(){
+
+
+    if (t==5) {
+clearInterval(k);
+        third.style.display="none"
+four.style.display="block"
+
+var a=(Math.floor(Math.random()*3)*150)
+
+four.style.top=(a)+"px"
+four.classList.add("fourcss")
+console.log("linkfour"+t)
+
+console.log("linkthird"+linkthird)
+l++
+console.log("t"+l)
+    }
+}
+
+setInterval(levelfour,1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function funfour(){
+var btop=parseInt(window.getComputedStyle(b).getPropertyValue("top"))
+var fourtop=parseInt(window.getComputedStyle(four).getPropertyValue("top"))
+
+
+
+if (btop==fourtop) {
+    four.style.display="none"
+}
+} setInterval(funfour,10);
+
+
+
+function gameOverfour() {
+    var fourright = parseInt(window.getComputedStyle(four).getPropertyValue("right"));
+    if (fourright>1260) {
+        alert("gameOver")
+        
+        
+         game.style.display = 'none';
+result.innerHTML=`score:${counter+counterz+n+s+t}`;
+        
+    }
+}
+
+setInterval(gameOverfour, 10);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
